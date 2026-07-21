@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VaultIQ AI 🔐  
+### AI-Powered Personal Ownership Assistant
 
-## Getting Started
+VaultIQ AI is a smart product management assistant that helps users store purchase information, track warranties, and organize their important belongings digitally.
 
-First, run the development server:
+## 🚀 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Open VaultIQ AI](https://vault-iq-ai-yhm5.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📌 Problem Statement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+People often lose paper receipts, forget warranty periods, and struggle to find purchase information when their products need maintenance or repairs.
 
-## Learn More
+This problem is common for students, families, and anyone who owns electronics or valuable products.
 
-To learn more about Next.js, take a look at the following resources:
+VaultIQ AI solves this problem by allowing users to upload receipts, extract important product information using AI, and store everything in a personal digital product vault.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# ✨ Features
 
-## Deploy on Vercel
+## 📄 AI Receipt Analysis
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Users can upload a product receipt image and VaultIQ AI automatically analyzes it.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The AI extracts:
+
+- Product name
+- Product category
+- Purchase date
+- Warranty information (when available)
+
+This reduces manual data entry and helps users quickly save product details.
+
+---
+
+## 🔐 Product Vault Dashboard
+
+Users can:
+
+- Save purchased products
+- View stored product information
+- Track warranty details
+- Delete products when no longer needed
+
+All saved products are stored securely in the database.
+
+---
+
+## 🤖 AI Product Assistant
+
+VaultIQ AI provides an AI assistant that helps users with:
+
+- Product-related questions
+- Troubleshooting guidance
+- Maintenance suggestions
+
+---
+
+# 🧠 AI Feature Details
+
+## AI Receipt Analyzer
+
+VaultIQ AI uses a Large Language Model (LLM) through the Groq API to analyze uploaded receipt information.
+
+The AI is instructed to identify important ownership details from receipts and return structured information.
+
+### System Prompt Used:
