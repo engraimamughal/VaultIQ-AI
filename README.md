@@ -35,7 +35,7 @@ The AI extracts:
 - Product category
 - Purchase date
 - Warranty information (when available)
-
+Note: The AI extracts information that is available in the uploaded receipt. If a receipt does not contain details like warranty period or purchase date, the app marks that information as unavailable.
 ---
 
 ## 🔐 Product Vault Dashboard
