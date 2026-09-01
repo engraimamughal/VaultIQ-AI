@@ -1,36 +1,226 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VaultIQ AI 🔐
+## AI-Powered Personal Ownership Assistant
 
-## Getting Started
+VaultIQ AI is an AI-powered product management assistant that helps users store purchase information, analyze receipts, and track warranties digitally.
 
-First, run the development server:
+The app allows users to upload product receipts, extract important information using AI, and maintain a personal product vault for their valuable belongings.
+
+---
+
+## 🚀 Live Demo
+
+[Open VaultIQ AI](https://vault-iq-ai-yhm5.vercel.app/)
+
+---
+
+## 📌 Problem Statement
+
+People often lose physical receipts, forget warranty periods, and struggle to find product purchase details when they need repairs, replacements, or maintenance.
+
+This problem affects students, families, and anyone who owns electronics or valuable products.
+
+VaultIQ AI solves this problem by creating a digital product vault where users can store their purchase records and use AI to extract important information from receipts.
+
+---
+
+# ✨ Features
+
+## 📄 AI Receipt Analysis
+
+Users can upload a product receipt image and VaultIQ AI analyzes it using artificial intelligence.
+
+The AI extracts:
+
+- Product name
+- Product category
+- Purchase date
+- Warranty information (when available)
+Note: The AI extracts information that is available in the uploaded receipt. If a receipt does not contain details like warranty period or purchase date, the app marks that information as unavailable.
+---
+
+## 🔐 Product Vault Dashboard
+
+Users can:
+
+- Save purchased products
+- View stored product information
+- Track warranty details
+- Delete products when no longer needed
+
+Product data is stored using Firebase Firestore.
+
+---
+
+## 🤖 AI Product Assistant
+
+VaultIQ AI includes an AI assistant that helps users with:
+
+- Product-related questions
+- Troubleshooting guidance
+- Maintenance suggestions
+
+---
+
+# 🧠 AI Feature Details
+
+## AI Receipt Analyzer
+
+VaultIQ AI uses a Large Language Model through the Groq API to analyze uploaded receipt information.
+
+The AI extracts ownership-related information from receipts and returns structured product details.
+
+### System Prompt Used:
+
+```
+You are an AI receipt analyzer for a product warranty management application.
+
+Analyze the uploaded receipt and extract:
+
+- Product name
+- Category
+- Purchase date
+- Warranty information
+
+Return clear structured information.
+
+If any information is missing, mention that it is unavailable.
+```
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+## Database
+
+- Firebase Firestore
+
+## AI
+
+- Groq API
+- Large Language Model (LLM)
+
+## Deployment
+
+- Vercel
+
+## Development Tools
+
+- Visual Studio Code
+- GitHub
+
+---
+
+# 📸 Screenshots
+
+## Home Page
+
+(<img width="960" height="540" alt="home png" src="https://github.com/user-attachments/assets/06457a09-1090-4b7f-ad8d-a7eba7c7a3ce" />
+)
+
+## AI Receipt Analysis
+
+(<img width="960" height="540" alt="receipt analysis" src="https://github.com/user-attachments/assets/9956325b-8348-4498-8f13-715460c9b06e" />
+)
+
+## Product Dashboard
+
+(<img width="960" height="540" alt="dashboard png" src="https://github.com/user-attachments/assets/84658456-e113-49b8-9633-54db4fad0b84" />
+)
+
+---
+
+# ⚙️ How To Run Locally
+
+## Clone Repository
+
+```bash
+git clone https://github.com/engraimamughal/VaultIQ-AI.git
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Add Environment Variables
+
+Create a `.env.local` file:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+```
+
+Add your Firebase configuration according to your Firebase project.
+
+Never upload API keys or secrets to GitHub.
+
+---
+
+## Run Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 🚧 Challenges & Solutions
 
-To learn more about Next.js, take a look at the following resources:
+## AI Integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Challenge:
+Connecting AI functionality with the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Solution:
+Integrated Groq API to analyze receipts and extract product information.
 
-## Deploy on Vercel
+## Database Integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Challenge:
+Saving and retrieving product records.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Solution:
+Used Firebase Firestore for cloud storage.
+
+## Deployment
+
+Challenge:
+Managing API keys securely.
+
+Solution:
+Used Vercel Environment Variables to protect secrets.
+
+---
+
+# 🔮 Future Improvements
+
+- Warranty expiration reminders
+- Email notifications
+- Barcode scanning
+- Mobile application version
+- Improved receipt analysis accuracy
+
+---
+
+# 👩‍💻 Author
+
+engraimamughal
+
+---
+
+# ⭐ Project Goal
+
+VaultIQ AI demonstrates how artificial intelligence can solve a real-world problem by combining receipt analysis, cloud storage, and a modern web application.
