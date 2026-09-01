@@ -120,15 +120,18 @@ If any information is missing, mention that it is unavailable.
 
 ## Home Page
 
-(Add your home page screenshot here)
+(<img width="960" height="540" alt="home png" src="https://github.com/user-attachments/assets/06457a09-1090-4b7f-ad8d-a7eba7c7a3ce" />
+)
 
 ## AI Receipt Analysis
 
-(Add your receipt analysis screenshot here)
+(<img width="960" height="540" alt="receipt analysis" src="https://github.com/user-attachments/assets/9956325b-8348-4498-8f13-715460c9b06e" />
+)
 
 ## Product Dashboard
 
-(Add your dashboard screenshot here)
+(<img width="960" height="540" alt="dashboard png" src="https://github.com/user-attachments/assets/84658456-e113-49b8-9633-54db4fad0b84" />
+)
 
 ---
 
